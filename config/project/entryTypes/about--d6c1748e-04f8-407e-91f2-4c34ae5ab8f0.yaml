@@ -1,0 +1,51 @@
+color: purple
+fieldLayouts:
+  18b2e278-f383-4e38-ae1a-7c993127c8bc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-06T13:39:15+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d73be5ed-c14e-480e-aec7-83397b2c1a50
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7a71c507-cf2b-46af-8e3b-a51280aa492b
+        userCondition: null
+handle: about
+hasTitleField: true
+icon: user-group
+name: About
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: language
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: language

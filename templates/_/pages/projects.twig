@@ -1,0 +1,15 @@
+{% extends "_/layouts/base" %}
+
+{% set projects = craft.entries.section('project').all() %}
+
+{% block bodyblock %}
+    <article>
+        <ul>
+            {% for project in projects %}
+                <li>
+                    <a href="{{ project.url }}">{{ project.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </article>
+{% endblock %}

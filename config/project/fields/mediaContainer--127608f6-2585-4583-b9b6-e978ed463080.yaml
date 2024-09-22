@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: mediaContainer
+instructions: null
+name: 'Media Container'
+searchable: false
+settings:
+  createButtonLabel: 'New Media Container'
+  entryTypes:
+    - 6ba47df5-668b-4d19-9c77-a2074bf06501 # Media Container
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 11b01a84-d309-4338-b58c-a7246d172445 # Contact
+handle: contact
+maxAuthors: 1
+name: Contact
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a5a21d6c-2f1e-4127-86f3-07b2581978f6: # Ojo de Agua
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/contact.twig
+    uriFormat: contacto
+  df4ba043-3c09-479f-9650-70512a4c3ec8: # Ojo de Agua - EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/contact.twig
+    uriFormat: contact
+type: single

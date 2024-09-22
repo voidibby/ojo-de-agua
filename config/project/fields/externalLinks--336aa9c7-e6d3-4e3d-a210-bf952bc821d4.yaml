@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: externalLinks
+instructions: null
+name: 'External Links'
+searchable: false
+settings:
+  createButtonLabel: 'Add Link'
+  entryTypes:
+    - b30b121a-cf95-4c3d-bf56-4e23c887a1ec # Link
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

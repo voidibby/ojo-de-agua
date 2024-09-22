@@ -1,0 +1,5 @@
+{% set home = craft.entries.section('home').one() %}
+
+<h1>404</h1>
+<p>Sorry could not find your page</p>
+<a href="{{ home.url }}">Go back</a>

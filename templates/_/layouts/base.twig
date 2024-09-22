@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="language" content="{{ entry.language }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="{{ alias('@web') }}/assets/css/main.css">
+
+    <link rel="icon" type="image/x-icon" href="{{ alias('@web') }}/assets/media/icon/favicon.ico">
+
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/JetBrainsMono-Bold.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Lora-Bold.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Lora-BoldItalic.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Lora-Italic.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Lora-Medium.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Lora-MediumItalic.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Lora-Regular.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Lora-SemiBold.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Lora-SemiBoldItalic.woff2" as="font" type="font/woff2" crossorigin ></link>
+    <link rel="preload" href="{{ alias('@web') }}/assets/media/fonts/Syne-Regular.woff2" as="font" type="font/woff2" crossorigin ></link>
+
+    <script src="{{ alias('@web') }}/assets/js/main.js" defer></script>
+    
+    <title>{{ entry }} | {{ site.siteTitle }}</title>
+</head>
+<body>
+    {{ include('_/partials/nav.twig') }}
+    {{ include('_/partials/header.twig') }}
+    <main>
+        {% block bodyblock %}{% endblock %}
+    </main>
+    {{ include('_/partials/footer.twig') }}
+</body>
+</html>

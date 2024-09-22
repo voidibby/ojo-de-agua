@@ -1,0 +1,24 @@
+{% set home = craft.entries.section('home').one() %}
+
+<nav>
+    {# Include home entry #}
+    {# <a href="{{ home.url }}" class="{{ entry == home.title ? 'current-page' }}">{{ home.title }}</a> #}
+
+    {# Navigation entries #}
+    {% for navEntry in site.navigationEntries %}
+        {% set url = navEntry.siteEntry ? navEntry.siteEntry.one().url %}
+        <a href="{{ url }}" class="{{ entry == navEntry.entryText ? 'current-page' }}">{{ navEntry.entryText }}</a>
+    {% endfor %}
+    
+    
+    {# Language switcher #}
+    {% set currentPage = entry.type|lower %}
+    {% set currentPageLang = entry.language %}
+    {% if currentPageLang == 'es' %}
+        {% set enLang = craft.entries.section(currentPage).id(entry.id).language('en') ? craft.entries.section(currentPage).id(entry.id).language('en').one() %}
+        <a {{ enLang ? 'href=' ~ enLang.url }} class="{{ enLang ?: 'disabled'  }}">en</a>
+    {% elseif currentPageLang == 'en' %}
+        {% set esLang = craft.entries.section(currentPage).id(entry.id).language('es') ? craft.entries.section(currentPage).id(entry.id).language('es').one() %}
+        <a {{ esLang ? 'href=' ~ esLang.url }} class="{{ esLang ?: 'disabled' }}">es</a>
+    {% endif %}
+</nav>    

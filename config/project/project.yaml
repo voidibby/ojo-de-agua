@@ -1,0 +1,108 @@
+dateModified: 1727008333
+email:
+  fromEmail: mail@ojodeagua.com
+  fromName: 'Ojo de Agua'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/assets/media/images'
+    type: craft\fs\Local
+    url: '@web/assets/media/images'
+  imagesTransforms:
+    hasUrls: true
+    name: 'Images Transforms'
+    settings:
+      path: '@webroot/assets/media/images/images-transforms'
+    type: craft\fs\Local
+    url: '@web/assets/media/images-transforms'
+  videos:
+    hasUrls: true
+    name: Videos
+    settings:
+      path: '@webroot/assets/media/videos'
+    type: craft\fs\Local
+    url: '@web/assets/media/videos'
+  videosTransforms:
+    hasUrls: true
+    name: 'Videos Transforms'
+    settings:
+      path: '@webroot/assets/media/videos/videos-transforms'
+    type: craft\fs\Local
+    url: '@web/assets/media/videos-transforms'
+meta:
+  __names__:
+    1aac449a-7546-4ea6-97ea-d47c3824659a: 'Project Status' # Project Status
+    1e0efbc8-d4e9-4469-8696-ac5415c00148: 'Short Credits' # Short Credits
+    4aaba8d8-895c-4170-bf6f-bb9da4b03c2b: Simple # Simple
+    4fae5928-0111-4d2a-aa70-cd983393254a: 'Long Description' # Long Description
+    5f86bae3-1c2a-4b7c-af60-a5ce305fac0f: 'Media Container Alignment' # Media Container Alignment
+    6ba47df5-668b-4d19-9c77-a2074bf06501: 'Media Container' # Media Container
+    6d0c2a53-b58c-4594-9fef-675bc000942c: 'Site Title' # Site Title
+    6eda3527-d69a-41fb-b5ae-2a1a7ae1cfbb: 'Media Width' # Media Width
+    07b9d4f2-bc89-4f96-9a9f-1d89375c3735: 'Media Container Height' # Media Container Height
+    7fc69676-b650-4480-9b26-d2b5b24fb8f1: 'Image Selection' # Image Selection
+    8dd4908a-985e-4cb3-a6ac-d083f1dec1e1: Home # Home
+    9f07d212-4863-4ee3-8cd1-ec2c00016810: 'Link Text' # Link Text
+    11b01a84-d309-4338-b58c-a7246d172445: Contact # Contact
+    25a61f28-8d78-4afc-9f02-3b3e605cbbb8: About # About
+    36bcdbe2-8027-474f-bd99-429059c6a5c6: Service # Service
+    38da1ed4-a6a7-4492-ae9c-3c0244422b30: 'Public Schema' # Public Schema
+    51f51022-65db-42fa-bcce-9e75795de3ab: 'Project Status' # Project Status
+    82f636a9-eb60-4738-93b3-dd77568f9020: 'Link URL' # Link URL
+    242b7798-c9ec-4802-bad8-2fcdcfd87a81: Project # Project
+    336aa9c7-e6d3-4e3d-a210-bf952bc821d4: 'External Links' # External Links
+    342fbbb2-8905-43e7-8005-2782143bfcc8: 'Festivals and Awards' # Festivals and Awards
+    1580e923-3f6f-4fdf-8243-17946daa3fa1: 'Ojo de Agua' # Ojo de Agua
+    2427c74a-4636-4918-b5b7-f02d51d963d0: Projects # Projects
+    3140d8e3-16f1-4e71-8b81-5daced5cff1d: Images # Images
+    3302c3e0-f970-4cff-a63b-f906291dd8ff: Projects # Projects
+    4673eba8-e570-4980-baaa-de8e6ec7ca8b: Location # Location
+    5905e53c-819f-49dd-844f-1d392e838404: 'Navigation Entries' # Navigation Entries
+    8253b8b5-dd72-421a-ace0-028f6d85810d: Entry # Entry
+    8977b5bd-fdcd-447e-92d7-91823da1070c: Services # Services
+    22242ecf-b093-4852-9399-9a895ab9926e: 'Media Element' # Media Element
+    79289fab-fa49-4732-8c0c-6caf086af9ef: Services # Services
+    127608f6-2585-4583-b9b6-e978ed463080: 'Media Container' # Media Container
+    752794ad-7b22-485c-b584-4253125312c4: Service # Service
+    950147d5-2ea2-4616-9639-da6f9d46c955: Main # Main
+    6215174c-f9ad-4cce-a65b-7cc29d7a4df7: 'Entry Text' # Entry Text
+    8545091e-6aa2-47f7-b003-14e7d1191c06: 'Site Entry' # Site Entry
+    a5a21d6c-2f1e-4127-86f3-07b2581978f6: 'Ojo de Agua' # Ojo de Agua
+    b2aada38-4b6d-466f-bab3-cdc0f6e4a978: Duration # Duration
+    b30b121a-cf95-4c3d-bf56-4e23c887a1ec: Link # Link
+    b94cc82a-819a-4800-b25a-41f822164fad: Contact # Contact
+    bbd2b987-f1c0-424d-bb0e-2046fa30e36f: 'Main Section' # Main Section
+    bc1fcd9b-837f-4db1-9eac-dfdd92db3322: Project # Project
+    caff6d18-24ff-43c7-9b91-0311ee675546: Videos # Videos
+    cd78e92d-ecfc-4322-9bb5-69c7ee3107ae: 'Short Description' # Short Description
+    d5ddbd50-1524-4803-8786-b2f578810251: Year # Year
+    d6c1748e-04f8-407e-91f2-4c34ae5ab8f0: About # About
+    d8f66ddf-e6e0-42d2-b6a4-cb60ac5c8999: Credits # Credits
+    df4ba043-3c09-479f-9650-70512a4c3ec8: 'Ojo de Agua - EN' # Ojo de Agua - EN
+    e567a1a4-b68e-4d68-814d-68d44c3eb35f: Home # Home
+    e680f6e3-b7da-4e7d-9a92-8e30e235e50c: 'Media Selection' # Media Selection
+    f9a16067-7c63-4c08-9914-22d40d28b895: Site # Site
+    f8854a93-fff2-479a-bdf0-ed6f55828710: 'Video Selection' # Video Selection
+    fa05aba0-387d-40a9-a7fa-b3a7ab463176: 'Media Elements Selection' # Media Elements Selection
+    feda2569-d1bf-4fcf-8273-67cb5e7a2d7c: Format # Format
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Ojo de Agua'
+  schemaVersion: 5.3.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

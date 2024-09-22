@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - bc1fcd9b-837f-4db1-9eac-dfdd92db3322 # Project
+handle: project
+maxAuthors: 1
+name: Project
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a5a21d6c-2f1e-4127-86f3-07b2581978f6: # Ojo de Agua
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/project.twig
+    uriFormat: 'proyectos/{slug}'
+  df4ba043-3c09-479f-9650-70512a4c3ec8: # Ojo de Agua - EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/project.twig
+    uriFormat: 'projects/{slug}'
+type: channel

@@ -1,0 +1,13 @@
+{% if inHeader is defined and inHeader %}
+    <div class="footer-content footer-header">
+        <h6>Ojo de Agua Cine SAS</h6>
+        <h6>audiovisual production and postproduction</h6>
+        <h6>{{ 'now'|date('Y') }}</h6>
+    </div>
+{% else %}
+    <div class="footer-content">
+        <h5>Ojo de Agua Cine SAS</h5>
+        <h5>audiovisual production and postproduction</h5>
+        <h5>{{ 'now'|date('Y') }}</h5>
+    </div>
+{% endif %}

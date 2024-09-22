@@ -1,0 +1,54 @@
+defaultPlacement: end
+fieldLayouts:
+  0257afa2-7843-4ef6-bb48-264cf5f1107d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-04T17:54:01+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: c0a8a0d4-c708-4d5f-a1dc-0effcaf0dd1a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4ce9e447-51d6-41d8-b631-edd6405c5d16
+        userCondition: null
+handle: projectStatus
+name: 'Project Status'
+siteSettings:
+  a5a21d6c-2f1e-4127-86f3-07b2581978f6: # Ojo de Agua
+    hasUrls: false
+    template: null
+    uriFormat: null
+  df4ba043-3c09-479f-9650-70512a4c3ec8: # Ojo de Agua - EN
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 9a777a06-2e91-45da-8dc2-2610e3889b60

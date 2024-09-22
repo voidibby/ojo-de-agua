@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: navigationEntries
+instructions: null
+name: 'Navigation Entries'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 8253b8b5-dd72-421a-ace0-028f6d85810d # Entry
+  includeTableView: false
+  maxEntries: 5
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

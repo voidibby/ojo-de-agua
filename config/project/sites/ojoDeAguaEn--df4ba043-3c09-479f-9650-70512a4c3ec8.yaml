@@ -1,0 +1,9 @@
+baseUrl: 'https://ojo-de-agua.ddev.site/en/'
+enabled: '1'
+handle: ojoDeAguaEn
+hasUrls: true
+language: en
+name: 'Ojo de Agua - EN'
+primary: false
+siteGroup: 1580e923-3f6f-4fdf-8243-17946daa3fa1 # Ojo de Agua
+sortOrder: 2

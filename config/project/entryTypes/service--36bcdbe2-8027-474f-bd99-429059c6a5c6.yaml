@@ -1,0 +1,51 @@
+color: indigo
+fieldLayouts:
+  50841776-bf78-4348-8f52-ccdd8efadb30:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-06T13:47:31+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aaf4eff7-6ef6-45e1-8835-6999ac06b09f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 97a85c3e-0e39-4ba8-b46d-efa92e8b41fa
+        userCondition: null
+handle: service
+hasTitleField: true
+icon: soft-serve
+name: Service
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: language
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: language

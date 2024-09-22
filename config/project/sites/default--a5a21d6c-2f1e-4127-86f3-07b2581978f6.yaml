@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: es
+name: 'Ojo de Agua'
+primary: true
+siteGroup: 1580e923-3f6f-4fdf-8243-17946daa3fa1 # Ojo de Agua
+sortOrder: 1

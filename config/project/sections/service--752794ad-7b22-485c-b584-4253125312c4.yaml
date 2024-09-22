@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 36bcdbe2-8027-474f-bd99-429059c6a5c6 # Service
+handle: service
+maxAuthors: 1
+name: Service
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a5a21d6c-2f1e-4127-86f3-07b2581978f6: # Ojo de Agua
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/service.twig
+    uriFormat: 'servicios/{slug}'
+  df4ba043-3c09-479f-9650-70512a4c3ec8: # Ojo de Agua - EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/service.twig
+    uriFormat: 'services/{slug}'
+type: channel

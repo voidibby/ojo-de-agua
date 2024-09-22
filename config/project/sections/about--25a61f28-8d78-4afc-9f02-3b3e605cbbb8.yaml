@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - d6c1748e-04f8-407e-91f2-4c34ae5ab8f0 # About
+handle: about
+maxAuthors: 1
+name: About
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a5a21d6c-2f1e-4127-86f3-07b2581978f6: # Ojo de Agua
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/about.twig
+    uriFormat: nosotros
+  df4ba043-3c09-479f-9650-70512a4c3ec8: # Ojo de Agua - EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/about.twig
+    uriFormat: about
+type: single

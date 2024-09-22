@@ -1,0 +1,37 @@
+{% extends "_/layouts/base" %}
+
+{% set project = entry %}
+{% set title = project.title %}
+{% set shortDescription = project.shortDescription %}
+{% set longDescription = project.longDescription %}
+{% set year = project.year %}
+{% set duration = project.duration %}
+{% set status = project.projectStatus ? project.projectStatus.one() : null %}
+
+{% block bodyblock %}
+    <article>
+        <div class="details-container">
+            <ul>
+                <li>{{ year ?: '0000' }}</li>
+                <li>{{ duration ?: '000min' }}</li>
+                {% if status %}
+                    <li>{{ status }}</li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="description-container">
+            {% if longDescription %}
+                {{ longDescription }}
+            {% else %}
+                <p>
+                    Please insert the project description
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus molestias maiores nobis inventore voluptatum obcaecati soluta ipsam. Placeat esse accusamus tenetur expedita commodi, numquam minus assumenda unde ullam laborum.
+                    At ratione, dignissimos laudantium illo nisi debitis ex ipsum facilis excepturi assumenda asperiores omnis odio quaerat aut ipsam voluptatum eius porro similique eligendi consequatur soluta nesciunt unde. Maxime, temporibus quod?
+                </p>
+            {% endif %}
+        </div>
+    </article>
+{% endblock %}
+

@@ -1,0 +1,12 @@
+<header>
+	<div class="title-container">
+	{% if entry.type == 'home' %}
+		<h1>{{ site.siteTitle }}</h1>
+	{% else %}
+		<h1>{{ entry.title ? entry.title : 'Enter entry title' }}</h1>
+	{% endif %}
+	</div>
+	{% if entry.type == 'home' %}
+		{{ include('_/partials/footer-content.twig' , { inHeader: true }) }}
+	{% endif %}
+</header>

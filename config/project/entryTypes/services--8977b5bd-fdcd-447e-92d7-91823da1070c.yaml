@@ -1,0 +1,51 @@
+color: purple
+fieldLayouts:
+  6c6c9b59-711f-496d-b7c0-bae19054fc00:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-06T13:41:46+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 45a29d93-4638-479a-9e17-bd5ffcd83429
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd455d48-4bb6-4e26-b47b-acb0d96bcbbf
+        userCondition: null
+handle: services
+hasTitleField: true
+icon: soft-serve
+name: Services
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: language
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: language

@@ -1,0 +1,13 @@
+{% set home = craft.entries.section('home').one() %}
+
+<footer class="{{ entry.type == 'home' ? 'footer-home footer-hidden' }}">
+    <h2>
+        <a href="{{ home.url }}">{{ site.siteTitle }}</a>
+    </h2>
+    <h5 class="project-breadcrumbs project-breadcrumbs-hidden">
+        {% if entry.type == 'project' %}
+            {{ entry.title }}
+        {% endif %}
+    </h5>
+    {{ include('_/partials/footer-content.twig') }}
+</footer>

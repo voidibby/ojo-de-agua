@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: projectStatus
+instructions: null
+name: 'Project Status'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: 'Select Project Status'
+  showCardsInGrid: false
+  showSiteMenu: false
+  source: 'group:1aac449a-7546-4ea6-97ea-d47c3824659a' # Project Status
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

@@ -1,0 +1,76 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
+fieldLayouts:
+  ca0cd490-6d7f-4328-94b4-fe48d5020118:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-22T09:11:02+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 536c04de-dcd6-4dc0-8723-9fc0395667f0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2024-09-22T09:13:36+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 36ad4430-bb29-416b-b06f-8c2aac4d90d3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6f5af48f-186b-4804-8cc6-ecf3897969cd
+        userCondition: null
+fs: videos
+handle: videos
+name: Videos
+sortOrder: 2
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+transformFs: videosTransforms
+transformSubpath: ''

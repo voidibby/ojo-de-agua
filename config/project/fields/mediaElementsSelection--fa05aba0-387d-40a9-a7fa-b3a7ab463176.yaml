@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: mediaElementsSelection
+instructions: null
+name: 'Media Elements Selection'
+searchable: false
+settings:
+  createButtonLabel: 'New Element'
+  entryTypes:
+    - 22242ecf-b093-4852-9399-9a895ab9926e # Media Element
+  includeTableView: false
+  maxEntries: 3
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

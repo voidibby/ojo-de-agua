@@ -1,0 +1,143 @@
+{% extends "_/layouts/base" %}
+
+{% set title = entry.title %}
+{% set main = entry.mainSection.all() %}
+{# {% set services = entry.servicesText %} #}
+
+{% block bodyblock %}
+		{% for section in main %}
+			{% if section.type == 'mediaContainer' %}
+				<section class="media-container align-{{ section.mediaContainerAlignment }}" style="height:{{ section.mediaContainerHeight }}vh">
+				{% set mediaElements = section.mediaElementsSelection.all() %}
+				{% for mediaElement in mediaElements %}
+					{% if mediaElement.imageSelection|length %}
+						{% set image = mediaElement.imageSelection.one() %}
+						<div class="media-element" style="flex-basis:{{ mediaElement.mediaWidth }}%">
+							<img src="{{ image.url }}" alt="{{ image.alt }}">
+						</div>
+					{% endif %}
+
+				{% endfor %}
+				</section>
+			{% endif %}
+		{% endfor %}
+		
+		<section class="media-container featured-media"></section>
+		<section class="services">{# {{ sevices }} #}
+		</section>
+		<article id="preview" aria-live="polite" class="Preview">
+			<p>
+				<strong>Markdown syntax guide</strong>
+			</p>
+			<h3 id="headings">Headings</h3>
+			<p>To create a heading, add between 1 and 6
+				<code>#</code>
+				in front of the word or phrase. The
+				<code>#</code>
+				will correspond to the heading level.</p>
+			<h1 id="heading-level-1">Heading level 1</h1>
+			<h2 id="heading-level-2">Heading level 2</h2>
+			<h3 id="heading-level-3">Heading level 3</h3>
+			<h4 id="heading-level-4">Heading level 4</h4>
+			<h5 id="heading-level-5">Heading level 5</h5>
+			<h6 id="heading-level-6">Heading level 6</h6>
+			<h3 id="paragraphs">Paragraphs</h3>
+			<p>To create a paragraph, use a blank line to separate one or more lines of text.</p>
+			<h3 id="line-breaks">Line Breaks</h3>
+			<p>To create a line break, end a line with two or more spaces, and then press return/enter.</p>
+			<p>This is the first line.<br>This is the second line</p>
+			<h3 id="emphasis">Emphasis</h3>
+			<p>To italicize a word or a phrase, add one asterisk or underscore before and after a word or phrase.</p>
+			<p>
+				<em>This text will be italic.</em>
+			</p>
+			<p>
+				<em>This text will also be italic.</em>
+			</p>
+			<p>To bold a word or a phrase, add two asterisks or underscores before and after a word or phrase.</p>
+			<p>
+				<strong>This text will be bold.</strong>
+			</p>
+			<p>
+				<strong>This text will also be bold.</strong>
+			</p>
+			<h3 id="blockquotes">Blockquotes</h3>
+			<p>To create a blockquote, add a &gt; in front of a paragraph. If you need to have a blockquote with multiple paragraphs you can add a &gt; on the blank lines between the paragraphs.</p>
+			<p>If you need to nest blockquotes, add a &gt;&gt; in front of the paragraph you want to nest.</p>
+			<p>&gt; Markdown is intended to be as easy-to-read and easy-to-write as is feasible.<br>&gt;<br>&gt; Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.<br>&gt;</p>
+			<h3 id="lists">Lists</h3>
+			<ul>
+				<li>You can organize items into unordered and ordered lists.</li>
+			</ul>
+			<h4 id="unordered-lists">Unordered Lists</h4>
+			<p>To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items.</p>
+			<ul>
+				<li>Item 1</li>
+				<li>Item 2<ul>
+						<li>Item 2.1</li>
+						<li>Item 2.2</li>
+					</ul>
+				</li>
+				<li>Item 3</li>
+			</ul>
+			<h4 id="ordered-lists">Ordered Lists</h4>
+			<p>To create an ordered list, add numbers followed by perios and the line items.</p>
+			<ol>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3<ol>
+						<li>Item 3.1</li>
+						<li>Item 3.2</li>
+					</ol>
+				</li>
+				<li>Item 4</li>
+			</ol>
+			<h3 id="code-blocks">Code Blocks</h3>
+			<p>Are normally indented four spaces or one tab.<br>You can wrap your code with ``` to create a code section, and by adding an optional language your code will get syntax highlighting.<br>You can indent every line of the block by at least four spaces or one tab.</p>
+			<pre><code class="language-js">console.log("Hello world!"); =></code></pre>
+			<pre><code>    &lt;h1&gt;Hello World&lt;/h1&gt;</code></pre>
+			<h3 id="horizontal-rules">Horizontal Rules</h3>
+			<p>To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line.</p>
+			<hr>
+			<h3 id="images">Images</h3>
+			<p>To add an image, add an exclamation mark (!), followed by an alt text in brackets, and the path or URL to the image asset.</p>
+			<p><img src="https://res.cloudinary.com/alexandracaulea/image/upload/v1602354372/logo_kkwfn6.png" alt="Logo"></p>
+			<p>To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses</p>
+			<p>
+				<a href="https://app.netlify.com/sites/markdown-previewer-project/deploys"><img src="https://api.netlify.com/api/v1/badges/4f96a8ed-8cd8-437e-8179-0f654debd772/deploy-status" alt="Netlify Status"></a>
+			</p>
+			<h3 id="links">Links</h3>
+			<p>To create a link, enclose the link text in brackets, and then follow it immediately with the URL in parentheses.<br>To add a title, enclose it in parentheses after the URL.</p>
+			<p>This is a
+				<a href="https://github.com/alexandracaulea/markdown-previewer">link</a>
+				to the repository.</p>
+			<p>You can read more about Markdown
+				<a href="https://www.markdownguide.org/basic-syntax" title="Markdown Guide">here</a>.</p>
+			<h3 id="urls-and-email-addresses">URLs and Email Addresses</h3>
+			<p>To turn a URL or email address into a link, enclose it in angle brackets.</p>
+			<h3 id="task-lists">Task Lists</h3>
+			<ul>
+				<li><input checked="" disabled="" type="checkbox">
+					this is a complete item
+				</li>
+				<li><input disabled="" type="checkbox">
+					this is an incomplete item
+				</li>
+			</ul>
+			<h3 id="tables">Tables</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Header</th>
+						<th align="center">Header</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Content</td>
+						<td align="center">Content</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+{% endblock %}

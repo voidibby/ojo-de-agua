@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: duration
+instructions: null
+name: Duration
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 0
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  suffix: min
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

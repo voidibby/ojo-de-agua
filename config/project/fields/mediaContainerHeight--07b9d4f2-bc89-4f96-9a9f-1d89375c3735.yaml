@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: mediaContainerHeight
+instructions: "Please input the height you want the container to have, the values are given in vh units which refer to the percentage of the height of the viewport.\r\nThe minimum and default value is 30 and the maximum value is 90\r\n"
+name: 'Media Container Height'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 30
+  max: 90
+  min: 30
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: vh
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number
